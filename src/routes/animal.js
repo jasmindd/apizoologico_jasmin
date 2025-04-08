@@ -37,6 +37,7 @@ router.put("/animals/:id", (req, res) => {
 });
 //Eliminar un animal por su id
 
+
 router.delete("/animals/:id", (req, res) => {
     const { id } = req.params;
     animalSchema
