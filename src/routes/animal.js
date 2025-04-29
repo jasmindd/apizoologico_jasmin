@@ -51,7 +51,7 @@ router.delete("/animals/:id", (req, res) => {
   
 });
 
-router.get("/animals", verifyToken, (req, res) => {
+router.get("/animals",  (req, res) => {
 
     animalSchema.find()
         .then((data) => res.json(data))
